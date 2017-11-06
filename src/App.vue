@@ -16,6 +16,7 @@
 import Locations from './components/Locations';
 import Current from './components/Current';
 import Future from './components/Future';
+import mockData from '../test/mocks/api-data-mock.json';
 
 export default {
   name: 'app',
@@ -25,18 +26,7 @@ export default {
     Future,
   },
   data() {
-    return {
-      observations: [
-        {
-          location: 'Dublin',
-          current: {
-            temp: 18,
-          },
-          forecasts: [17, 19, 20, 22, 12],
-        },
-      ],
-      forecastDates: ['4/11', '5/11', '6/11', '7/11', '8/11'],
-    };
+    return mockData;
   },
 };
 </script>
