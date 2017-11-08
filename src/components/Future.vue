@@ -1,9 +1,9 @@
 <template>
   <tbody>
     <tr v-for="(forecastDate, index) in forecastDates">
-      <th>{{forecastDate}}</th>
+      <th>{{`${new Date(forecastDate).getDate()}/${new Date(forecastDate).getMonth()}`}}</th>
       <td v-for="observation in observations">
-        {{observation.forecasts[index]}}
+        {{(Math.round(observation.forecasts[index] * 10 ) / 10).toFixed(1)}}
       </td>
     </tr>
   </tbody>
