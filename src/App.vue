@@ -37,6 +37,7 @@
         weather: mockData.weather,
         bestNowLocation: 'Dublin',
         bestForecastLocation: 'Dublin',
+        timer: null,
       };
     },
     mounted() {
@@ -44,6 +45,7 @@
         .then(() => {
           this.whereIsBestNow();
           this.whereIsBestForecast();
+          this.timer = setInterval(this.fetchWeatherData, 1000 * 60 * 30);
         });
     },
     methods: {
@@ -77,6 +79,12 @@
           return 0;
         }).pop().location;
       },
+      cancelAutoUpdate() {
+        clearInterval(this.timer);
+      },
+    },
+    beforeDestroy() {
+      this.cancelAutoUpdate();
     },
   };
 </script>
