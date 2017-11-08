@@ -2,7 +2,7 @@
   <tr>
     <th>Now</th>
     <td v-for="observation in observations">
-      {{observation.current.temp}}
+      {{(Math.round(observation.current.temp * 10 ) / 10).toFixed(1)}}
     </td>
   </tr>
 </template>
