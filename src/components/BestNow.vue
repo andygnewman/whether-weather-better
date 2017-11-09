@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Where's Best Right Now</h2>
-    <p>{{bestNowLocation}}</p>
+    <p>It is currently warmest in {{bestNowLocation}}</p>
   </div>
 </template>
 

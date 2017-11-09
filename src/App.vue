@@ -101,4 +101,12 @@
 table {
   margin: 0 auto;
 }
+td, th {
+  border: 1px, solid, grey;
+  min-width: 100px;
+  padding: 0 5px;
+}
+.location {
+  font-weight: bold;
+}
 </style>
