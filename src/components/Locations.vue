@@ -1,7 +1,8 @@
 <template>
   <tr>
     <th>Locations</th>
-    <td v-for="observation in observations">
+    <td class="location"
+      v-for="observation in observations">
       {{observation.location}}
     </td>
   </tr>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Where's Expected To Be Best</h2>
-    <p>{{bestForecastLocation}}</p>
+    <p>{{bestForecastLocation}} has the highest average forecast midday temperature across the next five days</p>
   </div>
 </template>
 
