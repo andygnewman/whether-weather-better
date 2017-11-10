@@ -1,5 +1,17 @@
 # whether-weather-better
 
+https://whether-weather-better.herokuapp.com/
+
+My first work with using the Vue.js Framework to create a simple single page app that is automatically updated via an API call.
+
+The app compares the current and forecast temperature across three locations (where family are) and determines where it is warmest currently and where it is forecast to be warmest.
+
+The app updates the values every 30 minutes and re-runs the comparison.
+
+It gets the weather data from an intermediary API I also built, that can be found at this [repo](https://github.com/andygnewman/whether-weather-api).
+
+I used the 'scaffolded' Vue, so at some stage would like to strip out all the unnecessary elements.
+
 > A Vue.js project
 
 ## Build Setup
