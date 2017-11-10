@@ -103,7 +103,7 @@ table {
 }
 td, th {
   border: 1px, solid, grey;
-  min-width: 100px;
+  min-width: 75px;
   padding: 0 5px;
 }
 .location {
