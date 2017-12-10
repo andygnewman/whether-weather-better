@@ -69,7 +69,7 @@
       },
       whereIsBestForecast() {
         this.bestForecastLocation = this.weather.observations.slice().sort((a, b) => {
-          const totalTemp = forecasts => forecasts.reduce((acc, currVal) => acc + currVal);
+          const totalTemp = forecasts => forecasts.temps.reduce((acc, currVal) => acc + currVal);
           if (totalTemp(a.forecasts) < totalTemp(b.forecasts)) {
             return -1;
           }
